@@ -34,8 +34,43 @@ ul li:hover {
 }
 
 /* home */
-#home{
+/* #home{
     background: url("https://i.postimg.cc/6QG48RVL/purpleswirl.jpg");
     background-position: center;
     background-size: cover;
+} */
+
+/* about */
+#profileBlock{
+    width: 200px;
+}
+#header {
+    border-right: 5px solid rgb(216, 215, 215);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(23), cursor .4s step-end infinite alternate;
+}
+#abouthead {
+    border-right: 5px solid rgb(216, 215, 215);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typingabout 2s steps(12), cursorabout .4s step-end infinite alternate;
+}
+
+/* animations */
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+
+@keyframes typing {
+    from {width: 0;}
+}
+@keyframes cursorabout {
+    50% {border-color: transparent;}
+}
+
+@keyframes typingabout {
+    from {width: 0;}
 }
