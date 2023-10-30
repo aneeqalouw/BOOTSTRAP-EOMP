@@ -6,6 +6,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+section {
+    /* so that sticky nav bar doesnt affect the scrolling to different sections */
+    scroll-margin-block: 6rem;
+}
 
 /* font */
 body{
@@ -34,15 +38,10 @@ ul li:hover {
 }
 
 /* home */
-/* #home{
+#home{
     background: url("https://i.postimg.cc/6QG48RVL/purpleswirl.jpg");
     background-position: center;
     background-size: cover;
-} */
-
-/* about */
-#profileBlock{
-    width: 200px;
 }
 #header {
     border-right: 5px solid rgb(216, 215, 215);
@@ -51,12 +50,68 @@ ul li:hover {
     overflow: hidden;
     animation: typing 2s steps(23), cursor .4s step-end infinite alternate;
 }
-#abouthead {
-    border-right: 5px solid rgb(216, 215, 215);
+
+/* about */
+#profileBlock{
+    width: 200px;
+}
+#about {
     width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typingabout 2s steps(12), cursorabout .4s step-end infinite alternate;
+}
+img[alt='Profile'] {
+    border: #0d0625;
+    width: 200px;
+    height: 250px;
+}
+
+/* education */
+#lced{
+    background-color: #211648;
+}
+
+/* skills */
+#softskills {
+    background-color: #211648;
+
+}
+img[alt='hardskill']{
+    mix-blend-mode: darken;
+}
+img[alt='softskill']{
+    mix-blend-mode: multiply;
+}
+
+/* projects */
+#projectcol {
+    background-color: #211648;
+}
+#projectimg{
+    width: 10rem;
+    height: 5rem;
+}
+a{
+    text-decoration: none;
+}
+
+/* testimonials */
+img[alt="Haanim Pietersen"] {
+    width: 5rem;
+    height: 5rem;
+}
+
+/* contact */
+form{
+    width: 500px;
+    padding: 40px;
+    height: 550px;
+    border-radius: 15px;
+    background-color: #211648;
+    text-align: start;
+}
+.details{
+    position: absolute;
+    top: 3255px;
+    left: 900px;
 }
 
 /* animations */
@@ -67,10 +122,4 @@ ul li:hover {
 @keyframes typing {
     from {width: 0;}
 }
-@keyframes cursorabout {
-    50% {border-color: transparent;}
-}
 
-@keyframes typingabout {
-    from {width: 0;}
-}
