@@ -10,11 +10,20 @@
 /* font */
 body{
     font-family: 'M PLUS Code Latin', monospace;
-}
+    text-align: center;
 
+}
+main {
+    background-color: #0d0625;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/* nav bar */
 ul li{
     padding: 20px;
     overflow: hidden;
+    color: antiquewhite;
     transition: 0.2s;
 
 }
@@ -22,4 +31,11 @@ ul li:hover {
     color: aliceblue;
     background: blueviolet;
     box-shadow: 0 0 10px blueviolet, 0 0 10px blueviolet, 0 0 10px blueviolet;
+}
+
+/* home */
+#home{
+    background: url("https://i.postimg.cc/6QG48RVL/purpleswirl.jpg");
+    background-position: center;
+    background-size: cover;
 }
