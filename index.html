@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootsrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- favicon -->
@@ -51,24 +52,28 @@
         <section class="container-fluid" id="home">
             <div class="row vh-100 justify-content-center align-items-center">
                 <h1 class="display-1 text-white" id="header">Hello world, I'm
-                    <span class="fw-bold d-block">Aneeqa</span>
+                    <span class="fw-bold" id="aneeqa">Aneeqa</span>
                 </h1>
             </div>
             
         </section>
 
         <!-- about -->
-        <section class="container my-4" id="about">
+        <section class="container-fluid" id="about">
             <div class="row">
-                <div class="col" id="profileBlock">
-                    <img src="https://i.postimg.cc/rsrKmRBR/profile.jpg" alt="Profile" class="img-fluid my-4" loading="lazy">
+                <div class="col my-5" id="profile-wrapper">
+                    <img src="https://i.postimg.cc/nzNrYZmm/profile2.jpg" alt="profile2" class="img-fluid" loading="lazy">
                 </div>
-                <div class="col">
+                <div class="col mx-3 my-5" id="about-wrapper">
                     <h2 class="display-4 text-white my-4 text-decoration-underline" id="abouthead"> <>About me</>/> </h2>
-                    <p class="lead text-white">Hi there! I'm <span class="fw-bold fs-3">Aneeqa Louw</span>, a 20 year old aspiring web developer from Cape
-                        Town, South Africa. I strive to constantly enhance my skills and 
-                        capabilities, continuing my life long learning journey. 
-                        I aim to always think outside the box. </p>
+                        <p id="aboutInfo" class="lead text-white">Hi there! I'm <span class="fw-bold fs-3">Aneeqa Louw</span>, a 20 year old aspiring web         developer from Cape
+                            Town, South Africa. I strive to constantly enhance my skills and 
+                            capabilities, continuing my life long learning journey. 
+                            I aim to always think outside the box. 
+                        </p>
+                        <p id="aboutInfoafr" class="lead text-white">
+                            Hallo daar! Ek is <span class="fw-bold fs-3">Aneeqa Louw</span>, 'n 20-jarige aspirant-webontwikkelaar van Kaapstad, Suid-Afrika.  Ek streef daarna om voortdurend my vaardighede en vermoëns te verbeter, om my lewenslange leerreis voort te sit. Ek poog om altyd buite die boks te dink.
+                        </p>
                 </div>
             </div>
 
@@ -76,7 +81,8 @@
 
         <!-- education -->
         <section class="container my-4 text-white" id="education">
-            <h2 class="display-4 text-white my-5 text-decoration-underline"><>Education</>/></h2>
+            <img src="https://i.postimg.cc/nrjRRG9w/edu2.png" alt="" class="img-fluid" loading="lazy" id="educon">
+            <h2 class="display-4 text-white my-5 text-decoration-underline" id="eduhead"><>Education</>/></h2>
             <div class="row bg-light-subtle text-black shadow rounded-5 my-2">
                 <div class="col">
                     <p>
@@ -105,9 +111,10 @@
 
         <!-- skills -->
         <section class="container text-white" id="skills">
-            <h2 class="display-4 my-5 text-decoration-underline"><>Skills</>/></h2>
+            <img src="https://i.postimg.cc/zfQPnQVR/skills2.png" alt="" class="img-fluid" loading="lazy" id="sklcon">
+            <h2 class="display-4 my-5 text-decoration-underline" id="skillshead"><>Skills</>/></h2>
             <div class="row">
-                <div class="col">
+                <div class="col" id="hardskills">
                     <img src="https://i.postimg.cc/TPQbPqvH/3gears.png" class="img-fluid" loading="lazy" alt="hardskill">
                     <h5 class="fw-bold display-6">Hard Skills</h5>
                     <p  class="lead fs-2">HTML</p>
@@ -129,11 +136,14 @@
 
         </section>
 
+        
+
         <!-- projects -->
-        <section class="container text-white" id="projects">
-            <h2 class="display-4 my-5 text-decoration-underline text-white my-5"><>Projects</>/></h2>
+        <section class="container text-white my-3" id="projects">
+            <img src="https://i.postimg.cc/x1Qx5YsH/colorfulweb2.png" alt="" class="img-fluid" loading="lazy" id="procon">
+            <h2 class="display-4 my-5 text-decoration-underline text-white my-5" id="prohead"><>Projects</>/></h2>
             <div class="row">
-                <div class="col mx-3 rounded-4" id="projectcol">
+                <div class="col mx-3 rounded-4 my-3" id="projectcol">
                     <h4 class="fw-bold fs-4 my-4">Mr Egg</h4>
                     <img src="https://i.postimg.cc/RhK4N5ZR/mregg.png" alt="Mr Egg" id="projectimg" loading="lazy" class="img-fluid">
                     <a href="https://github.com/aneeqalouw/MrEgg.git"  target="_blank">
@@ -143,7 +153,7 @@
                         <button class="btn btn-dark my-3">Netifly</button>
                     </a>
                 </div>
-                <div class="col mx-3 rounded-4" id="projectcol">
+                <div class="col mx-3 rounded-4 my-3" id="projectcol">
                     <h4 class="fw-bold fs-4 my-4">Alouw accessories</h4>
                     <img src="https://i.postimg.cc/gkjC0Lg0/alouw.png" alt="Alouw accessories" id="projectimg" loading="lazy" class="img-fluid">
                     <a href="https://github.com/aneeqalouw/eCommerce.git" target="_blank">
@@ -153,7 +163,7 @@
                         <button class="btn btn-dark my-3">Netifly</button>
                     </a>
                 </div>
-                <div class="col mx-3 rounded-4" id="projectcol">
+                <div class="col mx-3 rounded-4 my-3" id="projectcol">
                     <h4 class="fw-bold fs-4 my-4">Calculator</h4>
                     <img src="https://i.postimg.cc/3JGPpQHM/calculator.png" alt="Calculator" id="projectimg" loading="lazy" class="img-fluid">
                     <a href="https://github.com/aneeqalouw/Calculator.git" target="_blank">
@@ -163,7 +173,7 @@
                         <button class="btn btn-dark my-3">Netifly</button>
                     </a>
                 </div>
-                <div class="col mx-3 rounded-4" id="projectcol">
+                <div class="col mx-3 rounded-4 my-3" id="projectcol">
                     <h4 class="fw-bold fs-4 my-4">Keyboard</h4>
                     <img src="https://i.postimg.cc/rpHJQzSf/keyboard.png" alt="Keyboard" id="projectimg" loading="lazy" class="img-fluid">
                     <a href="https://github.com/aneeqalouw/KeyboardProject.git" target="_blank">
@@ -173,7 +183,7 @@
                         <button class="btn btn-dark my-3">Netifly</button>
                     </a>
                 </div>
-                <div class="col mx-3 rounded-4" id="projectcol">
+                <div class="col mx-3 rounded-4 my-3" id="projectcol">
                     <h4 class="fw-bold fs-4 my-4">Bootstrap portfolio</h4>
                     <img src="https://i.postimg.cc/FHd10RHr/portfolio.png" alt="Portfolio" id="projectimg" loading="lazy" class="img-fluid">
                     <a href="https://github.com/aneeqalouw/BOOTSTRAP-EOMP.git" target="_blank">
@@ -189,55 +199,76 @@
 
         <!-- testimonials -->
         <section class="container text-white" id="testimonials">
-            <h2 class="display-4 my-5 text-decoration-underline text-white my-5"><>Testimonials</>/></h2>
+            <img src="https://i.postimg.cc/Kv1xb7FQ/test3.png" alt="" id="tmnlcon" class="img-fluid" loading="lazy">
+            <h2 class="display-4 my-5 text-decoration-underline text-white my-5" id="tmnlhead"><>Testimonials</>/></h2>
             <div class="row">
                 <div class="col mx-3 my-2 bg-black rounded-4">
-                    <img src="https://i.postimg.cc/HxK4wtJS/haanim.png" alt="Haanim Pietersen" class="img-fluid my-3" loading="lazy">
+                    <img src="https://i.postimg.cc/76Z5DCK4/Screenshot-2023-10-31-135444.png" alt="Joel" class="img-fluid my-3" loading="lazy" id="testimonialimg">
+                    <h6 class="fw-bold fs-5">Joel Mukanya</h6>
+                    <p>I do have the pleasure of being Aneeqa Louw's Lecturer, a creative, well-behaved, and dedicated individual who enjoys collaborating with her peers and excels in her projects. She has acquired a diverse set of skills, including HTML, CSS 3, and Bootstrap 5. I wholeheartedly recommend Aneeqa as a strong candidate and wish her the very best in her future endeavors.</p>
+                </div>
+                <div class="col mx-3 my-2 bg-black rounded-4">
+                    <img src="https://i.postimg.cc/HxK4wtJS/haanim.png" alt="Haanim Pietersen" class="img-fluid my-3" loading="lazy" id="testimonialimg">
                     <h6 class="fw-bold fs-5">Haanim Pietersen</h6>
                     <p>Aneeqa Louw is a hardworking student who has an amazing personality. She is a great person to ask for help or opinions on your things. She is great at designing and making things look really cute and cool. I would recommend Aneeqa as someone you would need if you would want a cool and attention grabbing website.</p>
                 </div>
+                <div class="col mx-3 my-2 bg-black rounded-4">
+                    <img src="https://i.postimg.cc/44bhmpCG/Screenshot-2023-10-31-095425.png" alt="Eighton" class="img-fluid my-3" loading="lazy" id="testimonialimg">
+                    <h6 class="fw-bold fs-5">Eighton-Lee Paulse</h6>
+                    <p>Aneeqa is an exceptionally passionate individual with an extraordinary talent for design thinking. Her work has consistently left me in awe, and I am genuinely excited to witness her future endeavors. I wholeheartedly recommend her to any company in search of a highly skilled developer.</p>
+
+                </div>
+                <div class="col mx-3 my-2 bg-black rounded-4">
+                    <img src="https://i.postimg.cc/MHcthrkJ/Screenshot-2023-10-31-111437.png" alt="CJ" class="img-fluid my-3" loading="lazy" id="testimonialimg">
+                    <h6>Chrishano Burns</h6>
+                    <p>Aneeqa is such an awesome to be around with. She uplifts everyone to do better and is very helpful as she is such a youthful determined kind-hearted human. She inspires a lot of us to do better and to be better.</p>
+                </div>
+              
             </div>
 
         </section>
 
         <!-- contact -->
         <section class="container text-white" id="contact">
-            <h2 class="display-4 my-5 text-decoration-underline text-white my-5"><>Contact me</>/></h2>
-            <form action="https://formspree.io/f/xzbloloo">
-                <div class="form-wrapper">
-                    <div class="row my-3" id="contactFN">
-                        <label for="#firstname">First name</label>
-                        <input type="text" id="firstname" placeholder="Your name" required>
-                    </div>
-                    <div class="row my-3">
-                        <label for="#email">Email</label>
-                        <input type="text" id="email" placeholder="Email address" required>
-                    </div>
-                    <div class="row my-3">
-                        <label for="#msg">Message</label>
-                        <textarea name="mesg" id="msg" cols="30" rows="10"></textarea>
-                    </div>
-                    <div class="button-wrapper">
-                        <button class="btn btn-dark" type="submit">Submit</button>
-                    </div>
-    
-    
+            <img src="https://i.postimg.cc/4dc2wdT6/contact2.png" alt="" class="img-fluid my-3" loading="lazy" id="concon">
+            <h2 class="display-4 my-5 text-decoration-underline text-white my-5" id="conhead"><>Contact me</>/></h2>
+            <div class="row">
+                <div class="col">
+                    <form action="https://formspree.io/f/xzbloloo">
+                        <div class="form-wrapper">
+                            <div class="row my-3" id="contactFN">
+                                <label for="#firstname">First name</label>
+                                <input type="text" id="firstname" placeholder="Your name" required>
+                            </div>
+                            <div class="row my-3">
+                                <label for="#email">Email</label>
+                                <input type="text" id="email" placeholder="Email address" required>
+                            </div>
+                            <div class="row my-3">
+                                <label for="#msg">Message</label>
+                                <textarea name="mesg" id="msg" cols="30" rows="10" placeholder="Your message"></textarea>
+                            </div>
+                            <div class="button-wrapper">
+                                <button class="btn btn-dark" type="submit">Get in touch</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </form>
-            <div class="details">
-                <div class="row my-5">
-                    <h5>Details</h5>
-                    <p>aneeqalouw@gmail.com</p>
-                    <p>+27 83 424 6185</p>
-                </div>
-                <div class="row">
-                    <h5>Based in</h5>
-                    <p>Cape Town, South Africa</p>
+                <div class="col">
+                    <div class="details">
+                        <div class="row my-5">
+                            <h5>Details</h5>
+                            <p>aneeqalouw@gmail.com</p>
+                            <p>+27 83 424 6185</p>
+                        </div>
+                        <div class="row">
+                            <h5>Based in</h5>
+                            <p>Cape Town, South Africa</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </section>
-
       </main>
 
       <footer class="container-fluid">
