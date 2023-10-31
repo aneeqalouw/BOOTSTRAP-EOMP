@@ -23,6 +23,9 @@ main {
 ::-webkit-scrollbar{
     display: none;
 }
+
+
+
 /* nav bar */
 ul li{
     padding: 20px;
@@ -50,40 +53,94 @@ ul li:hover {
     overflow: hidden;
     animation: typing 2s steps(23), cursor .4s step-end infinite alternate;
 }
+#aneeqa{
+    color: fuchsia;
+}
+
 
 /* about */
-#profileBlock{
-    width: 200px;
-}
 #about {
     width: 100%;
+    background-color: #070314;
+    height: 700px;
 }
-img[alt='Profile'] {
+img[alt='profile2'] {
     border: #0d0625;
-    width: 200px;
-    height: 250px;
+    width: 350px;
+    height: 550px;
+    border-radius: 15px;
+}
+
+#about-wrapper{
+    background-color: #332567;
+    border: #070314 solid 2px;
+    box-shadow: 0 0 10px blueviolet, 0 0 10px blueviolet, 0 0 10px blueviolet;
+    border-radius: 10px;
+
 }
 
 /* education */
+#educon{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 955px;
+
+}
 #lced{
     background-color: #211648;
 }
+#eduhead{
+    position: relative;
+}
 
 /* skills */
+#sklcon{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 920px;
+
+}
+#skillshead{
+    position: relative;
+}
 #softskills {
+    background-color: #302168;
+    
+
+}
+#hardskills {
     background-color: #211648;
+    
 
 }
 img[alt='hardskill']{
     mix-blend-mode: darken;
+    width: 160px;
+    height: 86px;
 }
 img[alt='softskill']{
     mix-blend-mode: multiply;
+    width: 96px;
+    height: 86px;
 }
 
 /* projects */
+
+#procon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 950px;
+    /* mix-blend-mode: darken; */
+
+}
+#prohead{
+    position: relative;
+}
 #projectcol {
-    background-color: #211648;
+    background-color: #312268;
 }
 #projectimg{
     width: 10rem;
@@ -94,25 +151,44 @@ a{
 }
 
 /* testimonials */
-img[alt="Haanim Pietersen"] {
+#tmnlcon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 999px;
+    /* mix-blend-mode: darken; */
+
+}
+#tmnlhead{
+    position: relative;
+}
+#testimonialimg{
     width: 5rem;
     height: 5rem;
 }
 
+
 /* contact */
 form{
-    width: 500px;
+    position: relative;
+    /* width: 500px; */
     padding: 40px;
-    height: 550px;
     border-radius: 15px;
     background-color: #211648;
     text-align: start;
 }
-.details{
-    position: absolute;
-    top: 3255px;
-    left: 900px;
+#conhead{
+    position: relative;
 }
+#concon{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 975px;
+
+}
+
+
 
 /* animations */
 @keyframes cursor {
@@ -123,3 +199,21 @@ form{
     from {width: 0;}
 }
 
+
+/* media queries */
+@media all and (max-width:810px){
+    #aboutInfo, #aboutInfoafr{
+        font-size: 13px;
+    }
+    #header {
+        display: block;
+    }
+}
+@media all and (max-width:695px){
+    #aboutInfoafr{
+        font-size: 15px;
+    }
+    #profile-wrapper{
+        display: none;
+    }
+}
