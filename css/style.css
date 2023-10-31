@@ -26,6 +26,7 @@ main {
 
 
 
+
 /* nav bar */
 ul li{
     padding: 20px;
@@ -187,7 +188,14 @@ form{
     right: 975px;
 
 }
-
+ /* footer */
+ footer{
+    position: static;
+    bottom: 0;
+}
+footer p{
+    margin: 0;
+}
 
 
 /* animations */
@@ -217,3 +225,4 @@ form{
         display: none;
     }
 }
+
