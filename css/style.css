@@ -20,9 +20,7 @@ body{
 main {
     background-color: #0d0625;
 }
-::-webkit-scrollbar{
-    display: none;
-}
+
 
 
 
@@ -141,7 +139,9 @@ img[alt='softskill']{
     position: relative;
 }
 #projectcol {
+    /* width: 800px; */
     background-color: #312268;
+    display: inline-block;
 }
 #projectimg{
     width: 10rem;
@@ -150,6 +150,7 @@ img[alt='softskill']{
 a{
     text-decoration: none;
 }
+
 
 /* testimonials */
 #tmnlcon {
@@ -225,4 +226,11 @@ footer p{
         display: none;
     }
 }
+/* @media all and (max-width:685px){
+    #header {
+        display: block;
+    }
+
+
+} */
 
