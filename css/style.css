@@ -63,9 +63,9 @@ ul li:hover {
     background-color: #070314;
     height: 700px;
 }
-img[alt='profile2'] {
+img[alt='profile'] {
     border: #0d0625;
-    width: 350px;
+    width: 425px;
     height: 550px;
     border-radius: 15px;
 }
