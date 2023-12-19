@@ -41,7 +41,7 @@ ul li:hover {
 
 /* home */
 #home{
-    background: url("https://i.postimg.cc/6QG48RVL/purpleswirl.jpg");
+    background: url("../images/purpleswirl.jpg");
     background-position: center;
     background-size: cover;
 }
